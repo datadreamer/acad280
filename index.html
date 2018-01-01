@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>ACAD 280</title>
+    <meta name="description" content="USC ACAD 280 Designing for Experiences: Spring 2018.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="_css/site.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="_js/p5.min.js"></script>
+    <script src="_js/menu.js"></script>
+    <script src="_js/splash.js"></script>
+  </head>
+
+  <body>
+
+    <div id="splash">
+    </div>
+
+    <header>
+      <h1 class="classtitle">ACAD 280 Designing for Experiences</h1>
+      <button type="button" class="btn-navbar" onclick="toggleMenu()">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="assignments.html">Assignments</a>
+        <a href="links.html">Links</a>
+        <a href="demos.html">Demos</a>
+        <a href="slides.html">Slides</a>
+      </nav>
+    </header>
+
+    <section id="studentsection">
+      <div id="studentlist">
+
+        <a href="#" target="new">
+          <div class="student" style="background-image: url('_images/placeholder.png')">
+            <span class="studentname">Arthur Johnston</span>
+          </div>
+        </a>
+        <a href="#" target="new">
+          <div class="student" style="background-image: url('_images/placeholder.png')">
+            <span class="studentname">Brianna Doyle</span>
+          </div>
+        </a>
+        <a href="#" target="new">
+          <div class="student" style="background-image: url('_images/placeholder.png')">
+            <span class="studentname">Jacob Surovsky</span>
+          </div>
+        </a>
+        <a href="#" target="new">
+          <div class="student" style="background-image: url('_images/placeholder.png')">
+            <span class="studentname">Jamie Haberman</span>
+          </div>
+        </a>
+        <a href="#" target="new">
+          <div class="student" style="background-image: url('_images/placeholder.png')">
+            <span class="studentname">Liam Maddox</span>
+          </div>
+        </a>
+        <a href="#" target="new">
+          <div class="student" style="background-image: url('_images/placeholder.png')">
+            <span class="studentname">Mimi Tran Zambetti</span>
+          </div>
+        </a>
+        <a href="#" target="new">
+          <div class="student" style="background-image: url('_images/placeholder.png')">
+            <span class="studentname">Naylee Nagda</span>
+          </div>
+        </a>
+        <a href="#" target="new">
+          <div class="student" style="background-image: url('_images/placeholder.png')">
+            <span class="studentname">Valentina Suarez</span>
+          </div>
+        </a>
+
+      </div>
+      <a id="shuffleButton" href="#"><img src="_images/shuffle.png" id="shuffleButtonImg"></a>
+    </section>
+
+    <script>
+      $('#shuffleButton').on('click', function(){
+        var parent = $("#studentlist");
+        var divs = parent.children();
+        while (divs.length) {
+            parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+        }
+      });
+    </script>
+
+  </body>
+
+</html>
