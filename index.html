@@ -1,96 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+      <title>ACAD 280 - Designing Digital Experiences</title>
+      <meta charset="utf-8">
+      <meta name="description" content="ACAD 280 - Designing Digital Experiences">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <link href="site.css" rel="stylesheet" type="text/css">
+    </head>
 
-  <head>
-    <meta charset="UTF-8">
-    <title>ACAD 280</title>
-    <meta name="description" content="USC ACAD 280 Designing for Experiences: Spring 2018.">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="_css/site.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="_js/p5.min.js"></script>
-    <script src="_js/menu.js"></script>
-    <script src="_js/splash.js"></script>
-  </head>
+    <body>
 
-  <body>
+        <div id="container">
 
-    <div id="splash">
-    </div>
+            <h3 class="week">Spring 2023:</h3>
+            <h1>ACAD 280 - Designing Digital Experiences</h1>
+            <h4>Tuesday/Thursday, 2:00pm - 4:50pm, IYH 211</h4>
 
-    <header>
-      <h1 class="classtitle">ACAD 280 Designing for Experiences</h1>
-      <button type="button" class="btn-navbar" onclick="toggleMenu()">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="syllabus.html">Syllabus</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="assignments.html">Assignments</a>
-        <a href="links.html">Links</a>
-        <a href="demos.html">Demos</a>
-        <a href="slides.html">Slides</a>
-      </nav>
-    </header>
+            <div class="flexbox" id="students">
+                <div class="student"><a href="https://webdev.iyaclasses.com/~mangelin/acad280/" target="new"><img src="avatar.png" alt="Marcos Angelini"><br>Marcos Angelini</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~choihyew/acad280/" target="new"><img src="avatar.png" alt="Hyewon Choi"><br>Hyewon Choi</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~zconner/acad280/" target="new"><img src="avatar.png" alt="Zac Conner"><br>Zac Conner</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~hdewey/acad280/" target="new"><img src="avatar.png" alt="Henry Dewey"><br>Henry Dewey</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~jfranson/acad280/" target="new"><img src="avatar.png" alt="Jade Franson"><br>Jade Franson</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~ryaherma/acad280/" target="new"><img src="avatar.png" alt="Ry Hermann"><br>Ry Hermann</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~hansonle/acad280/" target="new"><img src="avatar.png" alt="Hanson Leung"><br>Hanson Leung</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~vwli/acad280/" target="new"><img src="avatar.png" alt="Vivian Li"><br>Vivian Li</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~krmathew/acad280/" target="new"><img src="avatar.png" alt="Kate Mathew"><br>Kate Mathew</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~jnavarra/acad280/" target="new"><img src="avatar.png" alt="Justice Navarra"><br>Justice Navarra</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~chaserob/acad280/" target="new"><img src="avatar.png" alt="Chase Robbins"><br>Chase Robbins</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~sssarma/acad280/" target="new"><img src="avatar.png" alt="Sadhana Sarma"><br>Sadhana Sarma</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~ersimon/acad280/" target="new"><img src="avatar.png" alt="Eli Simon"><br>Eli Simon</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~msuri/acad280/" target="new"><img src="avatar.png" alt="Matthew Suri"><br>Matthew Suri</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~elwong/acad280/" target="new"><img src="avatar.png" alt="Emily Wong"><br>Emily Wong</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~pamelaxi/acad280/" target="new"><img src="avatar.png" alt="Pamela Xiang"><br>Pamela Xiang</a></div>
+                <div class="student"><a href="https://webdev.iyaclasses.com/~jdyoung/acad280/" target="new"><img src="avatar.png" alt="Jaden Young"><br>Jaden Young</a></div>
+            </div>
 
-    <section id="studentsection">
-      <div id="studentlist">
+            <!-- <h3 class="weekbar">Week 1 (1/10 & 1/12)</h3> -->
+            <hr>
+            <br>
 
-        <a href="#" target="new">
-          <div class="student" style="background-image: url('_images/placeholder.png')">
-            <span class="studentname">Arthur Johnston</span>
-          </div>
-        </a>
-        <a href="#" target="new">
-          <div class="student" style="background-image: url('_images/placeholder.png')">
-            <span class="studentname">Brianna Doyle</span>
-          </div>
-        </a>
-        <a href="#" target="new">
-          <div class="student" style="background-image: url('_images/placeholder.png')">
-            <span class="studentname">Jacob Surovsky</span>
-          </div>
-        </a>
-        <a href="#" target="new">
-          <div class="student" style="background-image: url('_images/placeholder.png')">
-            <span class="studentname">Jamie Haberman</span>
-          </div>
-        </a>
-        <a href="#" target="new">
-          <div class="student" style="background-image: url('_images/placeholder.png')">
-            <span class="studentname">Liam Maddox</span>
-          </div>
-        </a>
-        <a href="#" target="new">
-          <div class="student" style="background-image: url('_images/placeholder.png')">
-            <span class="studentname">Naylee Nagda</span>
-          </div>
-        </a>
-        <a href="#" target="new">
-          <div class="student" style="background-image: url('_images/placeholder.png')">
-            <span class="studentname">Valentina Suarez</span>
-          </div>
-        </a>
+            <div class="flexbox">
+                <div class="col">
+                    <b class="category demo">DEMOS:<br><br></b>
+                    <ul>
+                        <li><a href="demos/day2.html">(1/12) Day 2: Basic Drawing</a></li>
+                        <li><a href="demos/day3.html">(1/17) Day 3: Basic Animation</a></li>
+                        <li><a href="demos/ftp.html">(1/24) Using File Transfer Protocol</a></li>
+                        <li><a href="demos/day5.html">(1/24) Day 5: Cursor Interactive Animation</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <b class="category presentation">PRESENTATIONS:<br><br></b>
+                    <ul>
+                        <li><a href="slides/intro.html" target="new">(1/10) What are Digital Experiences?</a></li>
+                        <li><a href="slides/cursor.html" target="new">(1/24) Stylus, Cursor, and Touch Interaction.</a></li>
+                        <li><a href="slides/keyboard.html" target="new">(1/26) Keyboard Interaction.</a></li>
+                    </ul>
 
-      </div>
-      <a id="shuffleButton" href="#"><img src="_images/shuffle.png" id="shuffleButtonImg"></a>
-    </section>
+                </div>
 
-    <script>
-      $('#shuffleButton').on('click', function(){
-        var parent = $("#studentlist");
-        var divs = parent.children();
-        while (divs.length) {
-            parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-        }
-      });
-    </script>
+            </div>
 
-  </body>
+            
+            <br style="clear: both">
+            <br><br>
+            <a href="https://iovine-young.usc.edu/">
+                <img src="logo.jpg" alt="USC Iovine and Young Academy" style="filter:grayscale()">
+            </a>
+        </div>
 
+    </body>
 </html>

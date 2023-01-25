@@ -1,0 +1,127 @@
+body{
+    margin: 0px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#container{
+    margin: 10%;
+}
+
+.col{
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-bottom: 20px;
+}
+
+.demo{
+    color: rgb(0, 255, 140);
+}
+
+.presentation{
+    color: rgb(0, 180, 255);
+}
+
+h1{
+    font-size: 4em;
+    line-height: 1em;
+    margin: 5px 0 10px 0;
+}
+h4{
+    margin: 0 0 50px 0;
+}
+
+ul{
+    padding-left: 20px;
+    margin: 0px;
+}
+ol{
+    padding-left: 20px;
+    margin: 0px;
+}
+
+a{
+    color: #fff;
+}
+
+a:visited{
+    color: #aaa;
+}
+
+a:hover{
+    color: #0cf;
+}
+
+.clear{
+    clear:both;
+}
+.code{
+    font-family:'Courier New', Courier, monospace;
+    background-color: #333;
+    color:#fc0;
+}
+.codeblock{
+    padding: 10px;
+}
+.flexbox{
+    display: flex;
+    gap: 10px;
+}
+.resources{
+    background-color: #333;
+    padding:20px 10% 20px 10%;
+    margin:0px;
+}
+.student{
+    font-size: 10pt;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.student img{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+#students{
+    flex-wrap: wrap;
+}
+.week{
+    margin:0px;
+    text-transform:uppercase;
+}
+.weekbar{
+    background-color: #333;
+    padding: 10px;
+    clear: both;
+}
+
+pre{
+    margin: 0px;
+    font-size: 1.2em;
+}
+
+
+
+/* @media screen and (max-width: 1000px) {
+    .flexbox{
+        flex-direction: column;
+    }
+    #students{
+        flex-direction: row;
+    }
+    .student{
+        flex-basis: 20%;
+    }
+} */
+
+@media screen and (max-width: 700px) {
+    h1{
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 2.5em;
+    }
+}
