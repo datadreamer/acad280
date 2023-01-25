@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using File Transfer Protocol</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Using File Transfer Protocol">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../site.css" rel="stylesheet" type="text/css">
+
+        <style>
+            
+        </style>
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <h3 class="week">Week 1: <span class="demo">Demo</span></h3>
+            <h1>Using File Transfer Protocol</h1>
+            <br/><br/>
+
+            File Transfer Protocol (FTP) is one of the earliest higher level protocols that works over Transfer Control Protocol (TCP) / Internet Protocol (IP). It was specifically created to transfer files between a client (your laptop) and the server (which is hosting your website). It's very easy to create new folders and upload content to the server. We can transfer any type of file (html, css, javascript, images, videos, audio, etc).<br><br>
+
+            <h2>Getting Setup</h2>
+
+            <ol>
+                <li>Visit <a href="https://filezilla-project.org/">FileZilla's website</a> and click the "Download FileZilla Client" button (not the server one). On the next page it should autodetect your operating system, so click the green "Download FileZilla Client" button.</li>
+                <li>When the file is downloaded, go ahead and install it on your computer.</li>
+                <li>Run the FileZilla Client application and when it opens click the top right icon in order to open the "Site Manager". You will need to enter the following information into the input fields provided:
+                    <ul>
+                        <li>Protocol: SFTP - SSH File Transfer Protocol</li>
+                        <li>Host: webdev.iyaclasses.com</li>
+                        <li>Port: leave it blank.</li>
+                        <li>Logon type: Normal</li>
+                        <li>User: your USC username (e.g. the start of your email address before the @ symbol).</li>
+                        <li>Password: AcadDev_Lastname_USCIDNUMBER (e.g. for me it would be "AcadDev_Siegel_0123456789").</li>
+                        <li>Hit the "Connect" button. If all goes well, you should see a list of directories show up on the right side of the application window. If it doesn't work, you will see a red error in the top section of the application.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <br>
+            <img src="sitemanager.png" alt="FTP Site Manager" style="width:100%"><br>
+            <br>
+
+            <h2>Using the FTP Client</h2>
+
+            The fundamentals of the FTP client are pretty basic. The application is broken down into four distinct areas:<br>
+            <br>
+
+            <ul>
+                <li>Top: Status Area shows the client/server communications and any errors that might occur.</li>
+                <li>Left: Your local computer's file system. This allows you to navigate your hard drive for files you want to upload.</li>
+                <li>Right: The remote server's file system. This allows you to navigate to a location where you want to upload files.</li>
+                <li>Bottom: Upload/Download Queue reveals the current status of file transfers.</li>
+            </ul>
+
+            <br>
+            <img src="ftp.png" alt="FTP client" style="width:100%"><br>
+            <br>
+
+            <h2>Uploading Files to the Server</h2>
+
+            <ol>
+                <li>Use the right side to navigate to the location on the server where you would like to upload your file (this should be somewhere inside public_html so that it can be accessed via the web).</li>
+                <li>Use the left side to navigate to the location on your hard drive where your file is currently saved.</li>
+                <li>Double click the appropriate file on the left side, and it will be automatically added to the queue and the transfer will begin.</li>
+                <li>If the upload is successful, you should see the right side update with the new file in it. If you attempt to upload a file that already has a file with the same name in that location, the application will prompt you if you would like to overwrite it or not.</li>
+            </ol>
+
+        </div>
+
+        <div class="section resources">
+            <h2>Resources</h2>
+
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol">Wikipedia: File Transfer Protocol</a></li>
+                <li><a href="https://wiki.filezilla-project.org/Documentation">FileZilla Documentation</a></li>
+            </ul>
+            
+
+        </div>
+
+    </body>
+</html>
