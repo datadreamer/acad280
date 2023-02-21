@@ -76,7 +76,11 @@ a:hover{
 .student{
     font-size: 10pt;
     width: 100px;
+    height: 120px;
     margin-bottom: 20px;
+    line-height: 220px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .student img{
     width: 100%;
