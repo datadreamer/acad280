@@ -76,11 +76,7 @@ a:hover{
 .student{
     font-size: 10pt;
     flex: 20%;
-    /* aspect-ratio: 1/1; */
-    /* width: 100px; */
-    /* height: 150px; */
     margin-bottom: 20px;
-    /* line-height: 220px; */
     background-size: contain;
     background-repeat: no-repeat;
 }
